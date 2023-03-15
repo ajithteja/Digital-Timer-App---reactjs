@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.bg-container {
+  background-image: linear-gradient(to right, #ffffff, #cffcf1, #defafe);
+  min-height: 100vh;
+  padding: 38px;
+}
+
+.heading {
+  text-align: center;
+  font-family: 'roboto';
+  font-weight: 500;
+  margin-bottom: 38px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-container {
+  margin-right: 38px;
+}
+
+.bg-img {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-size: cover;
+  background-position: center;
+  height: 353px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-time {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 128px;
+  height: 128px;
+}
+
+.time {
+  margin: 0;
+  font-family: 'roboto';
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.paused-running {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'roboto';
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pause-reset {
+  display: flex;
+  align-items: center;
+}
+
+.start-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  height: 21px;
+  margin-right: 8px;
+}
+
+.start {
+  font-size: 17px;
+  font-family: 'roboto';
+  font-weight: 500;
+  margin-right: 28px;
+}
+
+.restart {
+  margin: 0;
+}
+
+.description {
+  font-family: 'roboto';
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 23px;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  font-family: 'roboto';
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border-width: 0;
+  padding: 0;
+}
+
+.set-time {
+  font-size: 18px;
+  font-family: 'roboto';
+  font-weight: 500;
+  padding: 5px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #57e0b7, #00d9f5);
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+@media (max-width: 767px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .time-container {
+    margin: 0;
+  }
+  .bg-img {
+    height: 245px;
+    width: 302px;
+  }
+  .bg-time {
+    height: 115px;
+    width: 115px;
+  }
+}
